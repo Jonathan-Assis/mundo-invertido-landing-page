@@ -34,6 +34,10 @@
     font-weight: normal;
 }
 
+.light-theme .lightning {
+    display:none;
+}
+
 .dark-theme {
     --page-background: linear-gradient(
     180deg,
@@ -145,6 +149,71 @@ header::before {
     padding: 80px 20px;
     text-align: center;
     z-index: 2;
+}
+
+
+.lightning::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top:-85px;
+    background-image: url("../images/backgrounds/lightning.png");
+    filter: hue-rotate(110deg);
+    opacity: 0.4;
+    width: 400px;
+    height: 500px;
+    transform: rotateZ(-30deg);
+    animation: lightning 4.1s linear infinite;
+}
+
+.lightning::after {
+    content: "";
+    position: absolute;
+    right: 110px;
+    top:-85px;
+    background-image: url("../images/backgrounds/lightning.png");
+    filter: hue-rotate(110deg);
+    opacity: 0.5;
+    width: 400px;
+    height: 500px;
+    transform: rotateZ(35deg) scaleX(-1);
+    animation: lightning 4s linear infinite;
+}
+
+@keyframes lightning{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    23%{
+        opacity: 0;
+    }
+    28%{
+        opacity: 0.5;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0.7;
+    }
+    45%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0.4;
+    }
+    67%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 .header-content img {
