@@ -51,7 +51,7 @@
                 <iframe 
                     width="460" 
                     height="215" 
-                    src="https://www.youtube.com/embed/SJ9EFhQ3ANQ?controls=0"
+                    src="https://www.youtube.com/embed/otutSrxYpa4"
                     title="Youtube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -108,12 +108,15 @@
                         <input type="email" name="email" id="txtEmail">
 
                         <label for="txtLevel">Level</label>
-                        <input type="text" name="level" id="txtLevel">
+                        <input type="number" name="level" id="txtLevel">
 
                         <label for="txtCharacter">Personagem</label>
                         <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
 
                         <button type="button" id="btnSubscribe">Me inscrever</button>
+
+                        <ul id="subscriptions">
+                        </ul>
                     </form>
                 </div>
             </div>
@@ -128,7 +131,6 @@
         <img src="assets/images/footer/logo.svg" alt="Logotipo DIO" />
     </footer>
 
-    <script type="module" src="assets/js/main.js"></script>
     <script>
         window.addEventListener("click", function() {
             const audio = document.getElementById("music");
@@ -138,15 +140,17 @@
         function switchTheme() {
             document.body.classList.toggle("dark-theme");
             document.body.classList.toggle("light-theme");
-
+            
             const theme = document.body.classList[0];
             const music = theme === "light-theme" ? "normal-world.mpeg" : "inverted-world.mpeg";
-
+            
             const audio = document.getElementById("music");
             audio.src = `assets/musics/${music}`;
             audio.play();
             audio.volume = 0.3;
         }
     </script>
+
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
