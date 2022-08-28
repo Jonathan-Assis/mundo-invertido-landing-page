@@ -29,18 +29,19 @@ btnSubscribe.addEventListener('click', async () => {
     txtLevel.value = ''
     txtCharacter.value = ''
 
-    alert(`Seja bem-vindo Sr(a).${subscription.name} ao Hellfire Club`)
+    alert(`Seja bem-vindo ${subscription.name} ao Clube Hellfire`)
 })
 
+// Show all data in the collection and make the member list
 async function loadData() {
     const subscriptionsData = getHellfireClubSubscriptions()
     console.log('Seus inscritos:', subscriptionsData)
 
     const subscriptions = await getHellfireClubSubscriptions()
     subscriptionList.innerHTML = subscriptions.map(sub => `
-        <li>
-            ${sub.name}
-        </li>
+
+        <li>${sub.name} - ${sub.character}</li>
+
     `).join('')
 }
 
