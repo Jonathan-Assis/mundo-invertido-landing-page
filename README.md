@@ -9,10 +9,18 @@ This project has _light_ and _dark_ theme style variations, simulating the upsid
 the landing page contains text and image animations, also containing a form for registering new members to the D&D Club, 
 this project use `HTML`, `CSS`, `JavaScript` and `Firebase` database to store and query saved form data.
 
- ## 💻 Technologies
-- HTML
-- CSS
-- JavaScript
+
+## 🎬 Landing Page Preview
+
+<div align="center">
+    <img src="assets/images/gif/LandingPageST.gif" width="100%">
+</div>
+
+## 💻 Technologies
+
+- ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![](https://img.shields.io/badge/%20-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## 🏆 Dedication & Credits
 The project was built during the **Front-end week** live event promoted by <a href="https://github.com/digitalinnovationone/semana-frontend-mundo-invertido">DIO - Digital Innovation One</a>, for **didactic purposes**, to practice `HTML`, `CSS` and `JavaScript`.
